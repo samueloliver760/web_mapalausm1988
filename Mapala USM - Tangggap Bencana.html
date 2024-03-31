@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tanggap Bencana</title>
+<link rel="stylesheet" href="Design_tanggap.css">
+    <link rel="icon" href="logomapala.png">
+</head>
+
+<body>
+<nav> <a href="Mapala USM - Home Page.html"><img  id = "logo" src="logomapala.png"></a>
+  <h1 id = "headernama">Mapala <br>
+    USM 1988</h1>
+  <ul>
+    <div class="nav-li">
+      <li><a href = "Mapala USM - About Us.html" class = "tbl">Tentang Kami</a></li>
+      <li><a href = "Mapala USM - Kegiatan.html" class = "tbl">Kegiatan</a></li>
+      <li><a href = "Mapala USM - Tangggap Bencana.html" class = "tbl">Tanggap Bencana</a></li>
+      <li><a href = "Mapala USM - Kontak.html" class = "tbl" >Kontak</a></li>
+      <li><a href = "Mapala USM - Daftar Anggota.html" class="tbl-kuning">Daftar</a></li>
+    </div>
+  </ul>
+</nav>
+<div class="tanggap_bencana">
+  <h2>Mapala USM 1988 Tanggap Bencana</h2>
+  <div class = "slideshow">
+    <div class="content" style="max-width:800px"> <img class="mySlides" src="tb1.jpg"> <img class="mySlides" src="tb2.jpg"> <img class="mySlides" src="tb3.jpg"> <img class="mySlides" src= "tb4.jpg">
+      <div id = "back" onclick="plusDivs(-1)"><img class = "backto" src="left-arrow.png"></div>
+      <div id = "go" onclick="plusDivs(1)"><img class = "goto" src="right-arrow.png"></div>
+    </div>
+  </div>
+  <p id = "p1">Bencana memang tidak pernah didambakan oleh kita semua. Tetapi ketika bencana itu datang, kita harus tetap siap siaga dalam menghadapinya apapun situasinya. Kegoyakan hati dan pikiran itu pasti ada, amun kitda dapat bersinergi untuk tetap menguatkan antar satu dan lainnya. Sebagai manusia harusna kita saling membantu orang lain appaun latar belakangnya. </p>
+  <p id = "p2">Karena itu, Mapala USM 1988 sebagai organisasi pencinta alam selalu bergerak untuk membantu sesama manusia terutama korban bencana dengan membuat program tanggap bencana. Program tanggap bencana adalah bakti Mapala USM 1988 untuk negeri lewat aksi sosial dan kemanusiaan. Program ini diharapkan dapat membantu sesama bangsa dan setanah air </p>
+  <p id = "p3">Yang terbaru, tim tanggap bencana membantu para korban bencana banjir di Semarang pada 23 Februari tahun kemarin. Bantuan yang diberikan adalah membantu  para warga untuk evakuasi , pemberian sembako dan pakaian dan memberikan dana kepada wali kota Semarang. Semoga lewat bantuan tersebut dapat membantu para warga dan pemerintah agar dapat bangkit kembali dari kepeburukan. </p>
+</div>
+<div id="contact">
+  <div class="wrapper">
+    <div class="footer">
+      <div class="footer-section">
+        <h3 id = "alamat">Alamat</h3>
+        <p id = "alamattext">Jl. Soekarno Hatta, Tlogosari Kulon, Kec. Pedurungan, Kota Semarang, Jawa Tengah 50198</p>
+      </div>
+      <div class="footer-section">
+        <h3 id = "contactus">Contact Us !</h3>
+        <a  href = "mailto:mapalausm1988@gmail.com" id = "emailtext"><img id = "test2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png"></a> <a href="whatsapp://send?text=Halo kak saya mau tanya mengenai Mapala USM 1988&phone=+62882-3343-0727" ><img id="test3" src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></a> </div>
+      <div class="footer-section">
+        <h3 id = "followus">Follow Us !</h3>
+        <a href = "https://www.instagram.com/mapalausm1988/"><img  id = "test" src="https://icon-library.com/images/instagram-small-icon/instagram-small-icon-12.jpg" ></a> <a href = "https://www.youtube.com/channel/UCAN-iuwUEUDoXmPrUNkjJew/featured"><img  id = "test1" src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" ></a> <a href = "https://twitter.com/mapalausm"><img  id = "test4" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" ></a> </div>
+    </div>
+  </div>
+</div>
+<div id="copyright">
+  <div class="wrapper"> <span> Copyright &copy; 
+    <script>document.write(new Date().getFullYear())
+              </script> | Mapala USM 1988. All Rights Reserved. </span> </div>
+</div>
+<script>
+		
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+} 
+</script>
+</body>
+</html>

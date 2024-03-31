@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Kontak</title>
+<link rel="stylesheet" href="Design_kontak.css">
+    <link rel="icon" href="logomapala.png">
+</head>
+<body>
+<nav> <a href="Mapala USM - Home Page.html"><img  id = "logo" src="logomapala.png"></a>
+  <h1 id = "headernama">Mapala <br>
+    USM 1988</h1>
+  <ul>
+    <div class="nav-li">
+      <li><a href = "Mapala USM - About Us.html" class = "tbl">Tentang Kami</a></li>
+      <li><a href = "Mapala USM - Kegiatan.html" class = "tbl">Kegiatan</a></li>
+      <li><a href = "Mapala USM - Tangggap Bencana.html" class = "tbl">Tanggap Bencana</a></li>
+      <li><a href = "Mapala USM - Kontak.html" class = "tbl" >Kontak</a></li>
+      <li><a href = "Mapala USM - Daftar Anggota.html" class="tbl-kuning">Daftar</a></li>
+    </div>
+  </ul>
+</nav>
+<div class="kontak">
+  <h2>Mau tanya-tanya? Chat saja ya! </h2>
+  <img id  = "gambar1" src = "https://mncplaypromo.id/wp-content/uploads/2021/05/png-clipart-contact-us-graphic-computer-icons-hotline-contact-hotline-text-logo-1.png" /> <img  id = "logo1" src="ig.png">
+  <h3 id = "a1">@maplausm1988</h3>
+  <img  id = "logo2" src="gm.png">
+  <h3 id = "a2">mapalausm1988@gmail.com</h3>
+  <img  id = "logo3" src="yt.png">
+  <h3 id = "a3">Mapala Usm</h3>
+  <img  id = "logo4" src="wa.png">
+  <h3 id = "a4">+62 88233430727</h3>
+  <img id  = "gambar2" src = "g2.png" /> </div>
+<div class="map">
+  <h2> Mari Bergabung </h2>
+  <h4>Jl.Soekarno Hatta, RT.7/RW.7, Tologosari Kulon, Kec. Pedurungan, Kota Semarang, Jawa Tengah 59160</h4>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.242561827022!2d110.44982601427635!3d-6.980678870296727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708cc9bc739553%3A0x1b394f3321808683!2sMAPALA%20USM!5e0!3m2!1sen!2sid!4v1650036058661!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<div class="feedback">
+  <h2> Feedback form</h2>
+  <h4>Feedbackmu akan membuat Mapala USM 1988 lebih baik lagi kedepannya</h4>
+  <div class = "form">
+    <form id = "form" name = "namaform" class= "form" autocomplete="off" onSubmit="myfunc(event)" >
+      <div class = "form-element">
+        <input type="text" id="nama" name="nama" placeholder="Nama" required>
+      </div>
+      <div class = "form-element">
+        <input type="text" id="no_telepon" name="no_telepon" placeholder="No Telepon" required>
+      </div>
+      <div class = "form-element">
+        <textarea id = "feedback" name="feedback" cols="70" rows="15" placeholder = "Feedback" required></textarea>
+      </div>
+      <input type="submit" value="Submit" name="Submit" class="btn-submit">
+    </form>
+  </div>
+</div>
+<div id="contact">
+  <div class="wrapper">
+    <div class="footer">
+      <div class="footer-section">
+        <h3 id = "alamat">Alamat</h3>
+        <p id = "alamattext">Jl. Soekarno Hatta, Tlogosari Kulon, Kec. Pedurungan, Kota Semarang, Jawa Tengah 50198</p>
+      </div>
+      <div class="footer-section">
+        <h3 id = "contactus">Contact Us !</h3>
+        <a  href = "mailto:mapalausm1988@gmail.com" id = "emailtext"><img id = "test2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png"></a> <a href="whatsapp://send?text=Halo kak saya mau tanya mengenai Mapala USM 1988&phone=+62882-3343-0727" ><img id="test3" src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></a> </div>
+      <div class="footer-section">
+        <h3 id = "followus">Follow Us !</h3>
+        <a href = "https://www.instagram.com/mapalausm1988/"><img  id = "test" src="https://icon-library.com/images/instagram-small-icon/instagram-small-icon-12.jpg" ></a> <a href = "https://www.youtube.com/channel/UCAN-iuwUEUDoXmPrUNkjJew/featured"><img  id = "test1" src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" ></a> <a href = "https://twitter.com/mapalausm"><img  id = "test4" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" ></a> </div>
+    </div>
+  </div>
+</div>
+<div id="copyright">
+  <div class="wrapper"> <span> Copyright &copy; 
+    <script>document.write(new Date().getFullYear())
+              </script> | Mapala USM 1988. All Rights Reserved. </span> </div>
+</div>
+<script type="text/javascript">
+        function myfunc(event) {
+             alert("Data berhasil di input");
+            var full_name = document.getElementById("nama").value;
+            var no_telepon = document.getElementById("no_telepon").value;
+            var feedback = document.getElementById("feedback").value;
+            
+            localStorage.setItem("Nama Lengkap", full_name);
+            localStorage.setItem("No Telepon", no_telepon);
+            localStorage.setItem("Feedback", feedback);        
+        } 
+    </script>
+</body>
+</html>

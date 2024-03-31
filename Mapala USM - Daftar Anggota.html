@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Daftar Anggota Baru </title>
+<link rel="stylesheet" href="Design_daftaranggota.css">
+    <link rel="icon" href="logomapala.png">
+</head>
+
+<body>
+<nav> <a href="Mapala USM - Home Page.html"><img  id = "logo" src="logomapala.png"></a>
+  <h1 id = "headernama">Mapala <br>
+    USM 1988</h1>
+  <ul>
+    <div class="nav-li">
+      <li><a href = "Mapala USM - About Us.html" class = "tbl">Tentang Kami</a></li>
+      <li><a href = "Mapala USM - Kegiatan.html" class = "tbl">Kegiatan</a></li>
+      <li><a href = "Mapala USM - Tangggap Bencana.html" class = "tbl">Tanggap Bencana</a></li>
+      <li><a href = "Mapala USM - Kontak.html" class = "tbl" >Kontak</a></li>
+      <li><a href = "Mapala USM - Daftar Anggota.html" class="tbl-kuning">Daftar</a></li>
+    </div>
+  </ul>
+</nav>
+<div class = "form">
+  <h2>Ayo bergabung menjadi anggota Mapala USM 1988 !</h2>
+  <form  class="form" id="form" name = "form"  autocomplete="off"  onSubmit="myfunc(event)" >
+    <div class = "form-element">
+      <label for="nama">Nama Lengkap</label>
+      <br>
+      <input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required>
+      <div class="error"></div>
+    </div>
+    <div class = "form-element">
+      <label for="namap">Nama Panggilan</label>
+      <br>
+      <input type="text" id="namap" name="namap" placeholder="Nama Panggilan" required>
+      <div class="error"></div>
+    </div>
+ <div class = "form-element">
+      <label for="jenis_kelamin">Jenis Kelamin</label>
+      <br>
+      <select name = "jenis_kelamin" id = "jenis_kelamin" required>
+        <option>Pilih Jenis Kelamin</option>
+        <option>Pria</option>
+        <option>Wanita</option>
+      </select>
+    </div>
+    <div class = "form-element">
+      <label for="tanggal_lahir">Tanggal Lahir</label>
+      <br>
+      <input type="date" id="tanggal_lahir" name="tanggal_lahir" placeholder="Tanggal Lahir" required>
+    </div>
+    <div class = "form-element">
+      <label for="nama">NIM</label>
+      <br>
+      <input type="text" id="nim" name="nim" placeholder="No Induk Mahasiswa" required>
+      <div class="error"></div>
+    </div>
+    <div class = "form-element">
+      <label for="jurusan">Jurusan</label>
+      <br>
+      <select name = "opjurusan" id = "jurusan" required>
+        <option>Pilih Jurusan</option>
+        <option>Psikologi</option>
+        <option>Teknologi Hasil Pertanian</option>
+        <option>Ilmu Hukum</option>
+        <option>Perancangan Wilayah dan Kota</option>
+        <option>Teknik Elektro</option>
+        <option>Teknik Sipil</option>
+        <option>Akuntasi</option>
+        <option>Manajemen</option>
+        <option>Teknik Informatika</option>
+        <option>Ilmu Komunikasi</option>
+        <option>Sistem Informasi</option>
+        <option>Pariwisata</option>
+      </select>
+    </div>
+    <div class = "form-element">
+      <label for="semester">Semester</label>
+      <br>
+      <select name = "opjurusan" id = "semester" required>
+        <option value="-1" selected>Pilih Semester</option>
+        <option>Semester 1</option>
+        <option>Semester 2</option>
+        <option>Semester 3</option>
+        <option>Semester 4</option>
+        <option>Semester 5</option>
+        <option>Semester 6</option>
+        <option>Semester 7</option>
+        <option>Semester 8</option>
+      </select>
+    </div>
+    <div class = "form-element">
+      <label for="email">Email Aktif</label>
+      <br>
+      <input type="email" id="email" name="email" placeholder="Email" required>
+      <div class="error"></div>
+    </div>
+    <div class = "form-element">
+      <label for="notelepon">No Telepon / WA</label>
+      <br>
+      <input type="text" id="notelepon" name="notelepon" placeholder="No Telepon" required>
+      <div class="error"></div>
+    </div>
+    <div class = "form-element">
+      <label for="alasan">Alasan mengikuti Mapala USM 1988</label>
+      <br>
+      <textarea id = "alasan" name="alasan" cols="70" rows="15" required></textarea>
+      <div class="error"></div>
+    </div>
+    <div class = "form-element">
+      <label for="pasfoto">Upload Pas Foto</label>
+      <br>
+      <input type="file" name="pasfoto" id = "pasfoto" required>
+    </div>
+    <div class="form-element">
+      <input type="checkbox" id="agreetoTerm" name="aggreToTerm" value="agree">
+      <p id = "textagree">Saya telah menyetujui aturan yang diterapkan</p>
+    </div>
+    <input type="submit" value="Submit" name="Submit" class="btn-submit" id = "button">
+    <input type="reset" value="Reset" name="Reset" onclick="resetalert()" class="btn-reset">
+  </form>
+</div>
+<div id="contact">
+  <div class="wrapper">
+    <div class="footer">
+      <div class="footer-section">
+        <h3 id = "alamat">Alamat</h3>
+        <p id = "alamattext">Jl. Soekarno Hatta, Tlogosari Kulon, Kec. Pedurungan, Kota Semarang, Jawa Tengah 50198</p>
+      </div>
+      <div class="footer-section">
+        <h3 id = "contactus">Contact Us !</h3>
+        <a  href = "mailto:mapalausm1988@gmail.com" id = "emailtext"><img id = "test2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/1280px-Gmail_icon_%282020%29.svg.png"></a> <a href="whatsapp://send?text=Halo kak saya mau tanya mengenai Mapala USM 1988&phone=+62882-3343-0727" ><img id="test3" src="https://cdn-icons-png.flaticon.com/512/733/733585.png"></a> </div>
+      <div class="footer-section">
+        <h3 id = "followus">Follow Us !</h3>
+        <a href = "https://www.instagram.com/mapalausm1988/"><img  id = "test" src="https://icon-library.com/images/instagram-small-icon/instagram-small-icon-12.jpg" ></a> <a href = "https://www.youtube.com/channel/UCAN-iuwUEUDoXmPrUNkjJew/featured"><img  id = "test1" src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" ></a> <a href = "https://twitter.com/mapalausm"><img  id = "test4" src="https://cdn-icons-png.flaticon.com/512/733/733579.png" ></a> </div>
+    </div>
+  </div>
+</div>
+<div id="copyright">
+  <div class="wrapper"> <span> Copyright &copy; 
+    <script>document.write(new Date().getFullYear())
+              </script> | Mapala USM 1988. All Rights Reserved. </span> </div>
+</div>
+<script>
+ function resetalert() {
+	alert("Data berhasil di reset");
+}
+
+window.addEventListener("load",function(){
+    agreetoTerm.addEventListener("click",function() {
+        if (agreetoTerm.checked) {
+            button.style.visibility = "visible";
+        } else {
+            button.style.visibility = "hidden";
+        }
+    }, false)
+}); 
+</script> 
+<script type="text/javascript">
+        function myfunc(event) {
+               alert("Data berhasil di input");
+            var full_name = document.getElementById("nama").value;
+            var initial_name = document.getElementById("namap").value;
+            var jenis = document.getElementById("jenis_kelamin").value;
+            var tanggal_lahir = document.getElementById("tanggal_lahir").value;
+            var nim = document.getElementById("nim").value;
+            var jurusan = document.getElementById("jurusan").value;
+            var semester = document.getElementById("semester").value;
+            var email = document.getElementById("email").value;
+            var no_telepon = document.getElementById("notelepon").value;
+            var alasan = document.getElementById("alasan").value;
+            var pas_foto = document.getElementById("pasfoto").value;
+            
+            localStorage.setItem("Nama Panggilan", initial_name);
+            localStorage.setItem("Nama Lengkap", full_name);
+            localStorage.setItem("NIM", nim);
+            localStorage.setItem("Jenis kelamin", jenis);
+            localStorage.setItem("No telepon", no_telepon);
+            localStorage.setItem("Tanggal Lahir", tanggal_lahir);
+            localStorage.setItem("Jurusan", jurusan);
+             localStorage.setItem("Semester", semester);
+            localStorage.setItem("Email", email);
+            localStorage.setItem("Alasan", alasan);
+            localStorage.setItem("Pas Foto", pas_foto);
+        }
+        
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'QuickSand', san-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+img {
+  width: 100px;
+  margin-top: -5px;
+  margin-right: 1600px;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+#logo {
+  margin-left: 50px;
+}
+nav {
+  text-decoration: none;
+  background-color: lightblue;
+  padding: 30px;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  text-decoration: none;
+  height: 150px;
+  width: 100%;
+}
+ul {
+  margin-left: 350px;
+  margin-top: -88px;
+  list-style: none;
+}
+li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 40px;
+  margin-top: 50px;
+  font-size: 25px;
+  text-decoration: none;
+  padding: 10px 0;
+}
+h1 {
+  font-size: 35px;
+  margin-left: 190px;
+  margin-top: -170px;
+  text-align: left;
+}
+a.tbl {
+  text-decoration-line: none;
+  color: black;
+}
+.nav-li a.tbl:hover {
+  text-decoration: none;
+  border-bottom: 3.5px solid red;
+  margin-bottom: 10px;
+  color: green;
+}
+.nav-li a.tbl:after {
+  content: "";
+  position: absolute;
+  background-color: red;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+.nav-li a.tbl:hover :after {
+  width: 100%;
+}
+#logo {
+  margin-left: 50px;
+}
+a.tbl-kuning {
+  background: #FDFD96;
+  border-radius: 20px;
+  padding: 15px 20px 15px 20px;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 4px 4px 4px 4px gray;
+}
+a.tbl-kuning:hover {
+  background: #77DD77;
+  text-decoration: none;
+  color: white;
+}
+p {
+  font-size: 30px;
+  margin-left: 950px;
+  margin-top: -60px;
+  width: 600px;
+  text-align: left;
+}
+a.tbl-kuning:hover {
+  background: #77DD77;
+  text-decoration: none;
+  color: white;
+}
+h2 {
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 30px;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+.tulisanAboutUs1 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-top: 50px;
+}
+.tulisanAboutUs2 {
+  margin-bottom: 10px;
+  margin-left: -75px;
+  margin-top: 50px;
+}
+#paragraf1 {
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 770px;
+  width: 700px;
+  margin-top: 10px;
+}
+#paragraf2 {
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 770px;
+  width: 700px;
+  margin-top: 6px;
+}
+#gambaraboutus1 {
+  width: 400px;
+  height: 400px;
+  margin-left: 100px;
+  margin-top: -1050px;
+  margin-bottom: 90px;
+}
+#gambaraboutus2 {
+  width: 500px;
+  height: 450px;
+  margin-left: 530px;
+  margin-top: 10px;
+}
+.sejarah {
+  height: 850px;
+  background-color: greenyellow;
+}
+.sejarahmapala {
+  text-align: center;
+  margin-left: -10px;
+  margin-top: 60px;
+  padding-top: 50px;
+}
+.sejarahmapala1 {
+  width: 385px;
+  height: 650px;
+  margin-left: 75px;
+  margin-top: 40px;
+  margin-bottom: -10px;
+  background: white;
+  border-radius: 50px;
+  padding: 15px 20px 15px 20px;
+  color: black;
+}
+.sejarahmapala2 {
+  width: 385px;
+  height: 645px;
+  margin-left: 550px;
+  margin-top: -645px;
+  background: white;
+  border-radius: 50px;
+  padding: 15px 20px 15px 20px;
+  color: black;
+}
+.sejarahmapala3 {
+  width: 400px;
+  height: 650px;
+  margin-left: 1030px;
+  margin-top: -650px;
+  background: white;
+  border-radius: 50px;
+  padding: 15px 20px 15px 20px;
+  color: black;
+}
+h2 {
+  text-align: center;
+  width: 330px;
+  font-size: 23px;
+}
+#gambarsejarah1 {
+  width: 300px;
+  height: 250px;
+  margin-left: 20px;
+  margin-top: -30px;
+}
+#gambarsejarah2 {
+  width: 300px;
+  height: 250px;
+  margin-left: 25px;
+  margin-top: -30px;
+}
+#gambarsejarah3 {
+  width: 300px;
+  height: 250px;
+  margin-left: 30px;
+  margin-top: -40px;
+}
+.kalimatsejarah1 {
+  background: pink;
+  width: 320px;
+  border-radius: 45px;
+  padding: 15px 10px 15px 20px;
+  color: black;
+  text-align: center;
+  margin-top: -40px;
+  margin-left: 15px;
+  font-size: 18px;
+}
+.kalimatsejarah2 {
+  background: pink;
+  width: 300px;
+  border-radius: 45px;
+  padding: 15px 20px 15px 20px;
+  color: black;
+  text-align: center;
+  margin-top: -40px;
+  margin-left: 25px;
+  font-size: 18px;
+}
+.kalimatsejarah3 {
+  background: pink;
+  width: 350px;
+  border-radius: 45px;
+  padding: 15px 20px 15px 20px;
+  color: black;
+  text-align: center;
+  margin-top: -55px;
+  margin-left: 5px;
+  font-size: 15px;
+}
+.struktur {
+  padding-top: 20px;
+  height: 650px;
+}
+.strukturorganisasi {
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-top: -90px;
+}
+.bagianfooter {
+  height: 250px;
+  background-color: lightblue;
+}
+#contact {
+  background: #c4c4c4;
+}
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 500px;
+}
+.footer-section {
+  width: 50%;
+  margin: 0 auto;
+}
+#paragraf3 {
+  text-align: justify;
+  font-size: 20px;
+  margin-left: 770px;
+  width: 700px;
+  margin-top: 6px;
+}
+#contact {
+  background: #dedede;
+  padding: 50px 0px 50px 0px;
+}
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.footer-section {
+  width: 20%;
+  height: 50%;
+  margin: 0 auto;
+  font-weight: 500;
+}
+#alamat {
+  margin-left: 70px;
+  margin-top: -10px;
+  font-size: 40px;
+}
+#alamattext {
+  margin-left: -10px;
+  margin-top: -10px;
+  font-size: 25px;
+  width: 350px;
+  text-align: left;
+}
+#followus {
+  font-size: 40px;
+  margin-top: -20px;
+  margin-left: 45px;
+  width: 300px;
+}
+#contactus {
+  font-size: 40px;
+  margin-top: -10px;
+  margin-bottom: 35px;
+  margin-left: 70px;
+  width: 300px;
+}
+#phonetext {
+  margin-left: 100px;
+  margin-top: 100px;
+}
+#copyright {
+  padding: 15px;
+  font-size: 25px;
+  text-align: center;
+  height: 60px;
+  background-color: lightblue;
+  font-weight: 500;
+}
+#test {
+  width: 65px;
+  height: 60px;
+  margin-top: 15px;
+  margin-left: 20px;
+}
+#test2 {
+  width: 65px;
+  height: 50px;
+  margin-top: -50px;
+  margin-bottom: -40px;
+  margin-left: 120px;
+}
+#test3 {
+  width: 65px;
+  height: 60px;
+  margin-top: -20px;
+  margin-bottom: 100px;
+  margin-left: 90px;
+}
+#emailtext {
+  font-size: 25px;
+  margin-left: 80px;
+  margin-top: -100px;
+  text-decoration: none;
+  color: black;
+}
+#test1 {
+  width: 70px;
+  height: 50px;
+  margin-top: -145px;
+  margin-bottom: 95px;
+  margin-left: 120px;
+}
+#test4 {
+  width: 70px;
+  height: 60px;
+  margin-top: -155px;
+  margin-bottom: 110px;
+  margin-left: 220px;
+}
+.footer {
+  height: 200px;
+  font-weight: 500;
+}
